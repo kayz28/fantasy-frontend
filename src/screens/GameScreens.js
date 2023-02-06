@@ -46,6 +46,7 @@ export function GameScreens(props) {
                 renderItem={({item}) => 
                 <TouchableOpacity style = {styles.card}
                 onPress = {() => {
+                    console.log("Hiiiiiiiii");
                     props.navigation.navigate('ContestScreen', item);
                 }}>
                 <VStack>

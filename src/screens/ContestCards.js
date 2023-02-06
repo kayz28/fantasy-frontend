@@ -2,9 +2,10 @@ import {ActivityIndicator, FlatList, StyleSheet, TouchableOpacity} from 'react-n
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import React from 'react';
-import {VStack, Box ,HStack, NativeBaseProvider, Text} from 'native-base';
+import {VStack, Box ,HStack, NativeBaseProvider, Text, Spacer} from 'native-base';
 import {View} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import * as Progress from 'react-native-progress';
 
 var url = "http://localhost:5000/contest/";
 
@@ -36,6 +37,7 @@ export function ContestCards(props) {
                 ItemSeparatorComponent={() => <View style={{height: 10}} />} 
                 renderItem={({item}) => 
                 <TouchableOpacity style = {styles.card} activeOpacity={1}>
+                <VStack>
                 <Text style = {styles.team1}
                         mt="2" 
                         fontWeight="medium" 
@@ -43,25 +45,29 @@ export function ContestCards(props) {
                             Winning
                         </Text>
                         <HStack alignItems = "space-between">
+                        <Box style = {{flex: 0.667}}>
                             <Text style = {styles.team1}
                                         mt="2" 
                                         fontWeight="medium" 
                                         fontSize="xm">
                                         {'\u20A8'} {item.contest_total_winnings}
                             </Text>
-                            <VStack alignItems="center" style = {{flex: 0.33}}>
-                            </VStack>
-                            <Text style = {styles.team2} __text={{ color: "black"}}  mt="2" fontWeight="medium" fontSize="xm">
+                        </Box>
+                        <Text style = {styles.team2} __text = {{ color: "black"}}  mt = "2" fontWeight = "medium" fontSize = "xm">
                                
-                            </Text>
+                        </Text>
                             <TouchableOpacity style = {styles.button} activeOpacity = {0.7} onPress = {() => {
                                 props.navigation.navigate('TeamScreen', item);
               
                             }}>  
                               <Text style={styles.text}> {'\u20A8'} {item.entry_fee}  </Text>
                             </TouchableOpacity>
-                            
                         </HStack>
+                        <Progress.Bar 
+                            animated
+                            progress={0.3} borderRadius={6} color='gray' width={null} height={2}/>
+                        <Text></Text>
+                        </VStack>
                 </TouchableOpacity>
         } 
             keyExtractor={item => item.id} />
@@ -79,7 +85,7 @@ export function ContestCards(props) {
 const styles = StyleSheet.create({
     card : {
         backgroundColor: "white",
-        rounded: 10,
+        rounded: 5,
         overflow: 10, 
         borderColor: "coolGray.300",
         shadow: 5,
@@ -119,6 +125,8 @@ const styles = StyleSheet.create({
             borderRadius: 4,
             elevation: 2,
             backgroundColor: 'green',
+            alignSelf: 'flex-end',
+            backgroundColor: 'green'
         },
     
     text: {

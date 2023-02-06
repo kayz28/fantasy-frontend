@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, HStack, Button, IconButton, Icon, Text, NativeBaseProvider, Center, Box, StatusBar} from "native-base";
+import { HStack, IconButton, Icon, Text, Box} from "native-base";
 import { MaterialIcons } from "@expo/vector-icons";
 import {Dimensions, View} from 'react-native';
 import { StyleSheet } from 'react-native';
@@ -66,6 +66,7 @@ function ContestScreenAppBar(props) {
       </HStack>
       <HStack>
             <IconButton icon={<Icon as={MaterialIcons} name="search" size="sm" color="white" />} />
+            <IconButton icon={<Icon as={MaterialIcons} name="add-circle-outline" size="sm" color="white" />} />
             <IconButton icon={<Icon as={MaterialIcons} name="more-vert" size="sm" color="white" />} />
       </HStack>
       </HStack>
@@ -113,8 +114,6 @@ export function ContestsAppBar(props) {
 };
 
 export function TeamAppBar(props) {
-  console.log("in app bar");
-  console.log(props);
   return (
       <TeamScreenAppBar props = {props}/>
   );
