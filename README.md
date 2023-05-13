@@ -19,6 +19,7 @@ Khelo11 (Fantasy sport platform) uses a number of open source projects to work p
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 
+## Demo
   https://github.com/kayz28/fantasy-frontend/assets/25578098/f08444a9-901e-4cc5-937e-f5545cd9b91a
 
 
