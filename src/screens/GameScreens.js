@@ -23,7 +23,7 @@ export function GameScreens(props) {
                         res.data.data[i].delta = delta;
                         res.data.data[i].category = props.route.params.category;
                     }
-                    console.log(res);
+         
                     setTimeout(() => {
                         setLoading(true);
                         setData(res.data.data);
@@ -46,7 +46,6 @@ export function GameScreens(props) {
                 renderItem={({item}) => 
                 <TouchableOpacity style = {styles.card}
                 onPress = {() => {
-                    console.log("Hiiiiiiii");
                     props.navigation.navigate('ContestScreen', item);
                 }}>
                 <VStack>
