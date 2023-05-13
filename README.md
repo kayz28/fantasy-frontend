@@ -1,4 +1,4 @@
-# Fantasy sport frontend in React Js
+# Fantasy sport frontend in React Native
 The project is created in React js which consists of a fantasy sport frontend development 
 Basically it consist of a HomeScreen.js which consists of three stacks which is according to the game's i.e Cricket, BaseBall etc.
 which are being denoted by GameScreen.js which hits a open source backend api which gather's the information of the ongoing games
