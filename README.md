@@ -16,7 +16,6 @@ From there onwards we can create the team and wait for the result to be updated.
 Khelo11 (Fantasy sport platform) uses a number of open source projects to work properly:
 
 - [ReactNative] - HTML enhanced for web apps!
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 
