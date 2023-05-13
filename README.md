@@ -11,8 +11,16 @@ Axios client is being used to hit api and gather the info or the data, on the to
 when we join a contest a team selection screen appears which gathers info of the players of both the teams.
 From there onwards we can create the team and wait for the result to be updated.
 
-<p align="center" width="100%">
+## Tech
+
+Khelo11 (Fantasy sport platform) uses a number of open source projects to work properly:
+
+- [ReactNative] - HTML enhanced for web apps!
+- [Twitter Bootstrap] - great UI boilerplate for modern web apps
+- [node.js] - evented I/O for the backend
+- [Express] - fast node.js network app framework [@tjholowaychuk]
+
   https://github.com/kayz28/fantasy-frontend/assets/25578098/f08444a9-901e-4cc5-937e-f5545cd9b91a
-</p>
+
 
 
