@@ -11,8 +11,8 @@ Axios client is being used to hit api and gather the info or the data, on the to
 when we join a contest a team selection screen appears which gathers info of the players of both the teams.
 From there onwards we can create the team and wait for the result to be updated.
 
-<p align="center" width="100%">
+<p align="center" width="100%"></p>
   https://github.com/kayz28/fantasy-frontend/assets/25578098/f08444a9-901e-4cc5-937e-f5545cd9b91a
-</p>
+
 
 
